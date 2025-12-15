@@ -42,11 +42,16 @@
 import student_data
 
 # print(student_data.students)
-students = student_data.students
-print(len(students))
+students = student_data.students #imports the student data from the student_data.py file
+print(len(students))#length of the list of students
 print(students[0]['Combo,Name'])
 print(students[0]['Email'][0])
 print(students[0]['Email'][1])
+print(students[0]['FName'][1])
+print(students[0]['LName'][1])
+print(students[0]['MName'][0])
+print(students[0]['Email'][1])
+
 
 # What is being counted?
 
@@ -67,12 +72,19 @@ print(students[0]['Email'][1])
 #we are iterating through the data
 #and printing the name and email of the students
 #we are also printing a line of underscores to separate the students
-#we are also printing a line of underscores to separate the students
-for student in students:
-    print(student['Combo,Name'])
-    print(student['Email'][0])
-    print(student['Email'][1])
-    print("_"*25)
+# #we are also printing a line of underscores to separate the students
+# for student in students:
+#     print(student['Combo,Name'])
+#     print(student['Email'][0])
+#     print(student['Email'][1])
+#     print(student['HR'])
+#     print(student['GL'])
+#     print(student['CPSID'])
+#     student.update({'LunchSatus':'Reduced'})
+#     print(student['LunchSatus'])
+#     if student['GL']>=10:
+#         print("off campus lunch")
+#     print("_"*25)
 
 # What does the loop variable student represent on each pass?
 
@@ -93,6 +105,10 @@ for student in students:
     if name == student['Combo,Name']:
         print(student['Combo,Name'])
         print("this works")
+
+        
+id = input("what is your id?")
+print([id])
 
 # What is the goal of this search?
 
